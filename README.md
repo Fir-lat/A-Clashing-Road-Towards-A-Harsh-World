@@ -5,6 +5,7 @@
 * Experience: previous information obtained through interaction with the environment
 * Theoretical learning guarantees for an algorithm depend on the complexity of the concept classes considered and the size of the training sample.
 * Data-driven: statistics, probability, and optimization
+* \$$ \mathcal{f(x) = y^2}\$$
 
 ## What kind of porblems can be tackled using machine learning
 
