@@ -40,7 +40,7 @@ $$
 * Training sample
 * Validation sample
 * Test sample
-* Loss function: $$L : \mathcal{Y \times Y'} \rightarrow \mathbb{R_+}$$
+* Loss function: $L : \mathcal{Y \times Y'} \rightarrow \mathbb{R_+}$
 * Hypothesis set
 
 ## Learning scenarios
@@ -61,5 +61,5 @@ $$
 Generalization \neq Memorization
 $$
 
-Sample size and complexity $$\rightarrow$$​ (overfitting / underfitting)
+Sample size and complexity $\rightarrow$​ (overfitting / underfitting)
 

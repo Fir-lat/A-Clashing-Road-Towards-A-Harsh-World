@@ -14,17 +14,35 @@ The PAC framwork helps define the class of learnable concepts in terms of the nu
 * $concept~class~\mathcal{C}$​: a set of concepts we wish to learn.
 * $\mathcal{D}$​: it is assumed that examples are independently and identically distributed ($i.i.d$) according to  some fixed but unknown distribution
 * $hypothesis~set~\mathcal{H}$​: a fixed set of possible concepts which might not coincide with $\mathcal{C}$.
-* $risk/risk~error/error~R(h)$: the generalization error of a hypothesis $h \in \mathcal{H}$​
+* $risk/risk~error/error~R(h)$: the generalization error of a hypothesis $h \in \mathcal{H}$
+
 
 **The learning problem**: Given a sample $S = (x_1, \cdots, x_m)$​ drawn $i.i.d$​ according to $\mathcal{D}$ with labels $(c(x_1), \cdots, c(x_m))$ where $c \in \mathcal{C}$, the learner intends to select a hypothesis $h_S \in \mathcal{H}$​ that has a small $generalization~error$​ with respect to the concept $c$​.
 
 **Definitions 2.1 Generalization error**: Given a hypothesis $h \in \mathcal{H}$​, a target concept $c \in \mathcal{C}$​, and a sample $S = (x_1, \cdots, x_m)$​ and an underlying distribution $\mathcal{D}$, the generalization error or risk of $h$​ is defined by
 
 $$
-R(h) = \mathbb{P}_{x\sim \mathcal{D}}[h(x) \neq c(x)] = \mathbb{E}_{x\sim \mathcal{D}}[1_{h(x) \neq c(x_i)}]
+R(h) = \mathbb{P}_{x\sim \mathcal{D}}[h(x) \neq c(x)] = \mathbb{E}_{x\sim \mathcal{D}}[1_{h(x) \neq c(x)}]
 $$
 
+**Definitions 2.2 Empirical error** Given a hypothesis $h \in \mathcal{H}$, a target concept $c \in \mathcal{C}$, and a sample $S = (x_1, \cdots, x_m)$, the empirical error or empirical risk of $h$ is defined by
+
+$$
+\widehat{R}_S(h) = \frac{1}{m}\sum\limits_{i = 1}^m1_{h(x_i) \neq c(x_i)}
+$$
+
+While the generalization error is based on the distribution $\mathcal{D}$ and the concept $c$, which are unknown, the empirical error of $h \in \mathcal{H}$ is based on the sample $S$. Some guarantees can relate these two qunatities with high probability, under certain general assumptions.
+
+Given a fixed $h \in \mathcal{H}$ and an $i.i.d$ sample $\mathcal{S}$, we have
+
+$$
+\mathbb{E}_{S \sim \mathcal{D}^m}[\widehat{R}_S(h)] = R(h)
+$$
+
+_Proof_ *Proof*
+
 ## Guarantees for finite hypothesis sets -- consistent case
+
 
 ## Guarantees for finite hypothesis sets -- inconsistent case
 
