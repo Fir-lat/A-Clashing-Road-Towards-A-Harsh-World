@@ -21,6 +21,10 @@
 * [Learning Automata and Languages](foundations-of-machine-learning/learning-automata-and-languages.md)
 * [Reinforcement Learning](foundations-of-machine-learning/reinforcement-learning.md)
 
+## 🦀 Calculus
+
+* [Page 7](calculus/page-7.md)
+
 ## 🦉 Linear Algebra
 
 * [Page 1](linear-algebra/page-1.md)
@@ -40,3 +44,7 @@
 ## 🐫 Statistical Inference
 
 * [Page 6](statistical-inference/page-6.md)
+
+## 🦭 Deep Learning
+
+* [Page 3](deep-learning/page-3.md)
